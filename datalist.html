@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      DataList Example
+    </p>
+
+    <h2 class="subtitle">[type=number]</h2>
+    <input type="number" list="numbers" class="input" />
+
+    <h2 class="subtitle">[type=range]</h2>
+    <input type="range" class="range" list="numbers" max="100" />
+
+    <datalist id="numbers">
+      <option value="0"></option>
+      <option value="10"></option>
+      <option value="40"></option>
+    </datalist>
+
+    <h2 class="subtitle">[type=color]</h2>
+    <input type="color" list="colors" class="input" value="#ffffff" />
+    <datalist id="colors">
+      <option value="#ffeb3b"></option>
+      <option value="#ffc107"></option>
+      <option value="#ff9800"></option>
+      <option value="#ff5722"></option>
+    </datalist>
+
+    <h2 class="subtitle">[type=search]</h2>
+    <input type="search" list="searches" class="input" />
+    <datalist id="searches">
+      <option value="my previous search"></option>
+      <option value="and the one before"></option>
+      <option value="the old one"></option>
+    </datalist>
+
+    <h2 class="subtitle">[type=email]</h2>
+    <input type="email" list="emails" class="input" />
+    <datalist id="emails">
+      <option value="my.first.email@example.com"></option>
+      <option value="my.alternative.email@example.com"></option>
+    </datalist>
+  </body>
+</html>
